@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AGRIVUE | Climate Intelligence for Every Field</title>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="logo.png">
+
+
+  <link rel="stylesheet" href="style1.css"/>
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="brand">
+      <img src="AGRIVUE.jpg" alt="AGRIVUE"/>
+      <span>AGRIVUE</span>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#product">Product</a></li>
+      <li><a href="#how">How It Works</a></li>
+      <li><a href="#for">For Whom</a></li>
+      <li><a href="#impact">Impact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <span class="lang">EN | हिंदी | ਪੰਜਾਬੀ</span>
+      <button class="nav-cta" onclick="openAgriVue()">Get Early Access</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="product">
+  <div class="hero-container">
+
+    <div class="hero-left">
+      <h1>Climate Intelligence for Every Field</h1>
+
+      <p class="subhead">
+        AGRIVUE turns live land, crop, and sky data into simple
+        climate decisions for your farm.
+      </p>
+
+      <ul class="hero-bullets">
+        <li>Prevent yield loss with early climate alerts</li>
+        <li>Plan irrigation and inputs using field-level insights</li>
+        <li>Get hyperlocal alerts in your own language</li>
+      </ul>
+
+      <div class="hero-actions">
+        <button class="btn-primary" onclick="startScan()">
+          Start Free Climate Scan
+        </button>
+        <span class="helper">No login required · Takes 30 seconds</span>
+        <a href="#" class="btn-secondary">Watch 1-min Demo</a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="farm-card">
+        <h4>Today on your farm</h4>
+
+        <div class="metric">📍 Narnaund, Haryana</div>
+        <div class="metric">🌧 Rainfall risk: <b>Medium</b></div>
+        <div class="metric">🌡 Temperature: <b>34°C</b></div>
+
+        <div class="recommend">
+          Suggested action:
+          <strong>Delay irrigation by 1 day</strong>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= TRUST STRIP ================= -->
+<section class="trust-strip">
+  Built for Indian smallholder farmers · Works on low-internet devices · Supports local languages
+</section>
+
+<!-- ================= HOW IT WORKS ================= -->
+<section class="section" id="how">
+  <h2>How AgriVue Works</h2>
+
+  <div class="steps">
+    <div class="step">
+      <h3>Sense</h3>
+      <p>We read satellite, soil, and weather data for your fields.</p>
+    </div>
+
+    <div class="step">
+      <h3>Analyze</h3>
+      <p>Our models detect climate risk days before damage occurs.</p>
+    </div>
+
+    <div class="step">
+      <h3>Advise</h3>
+      <p>You receive simple do / don’t recommendations on your phone.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOR WHOM ================= -->
+<section class="section soft" id="for">
+  <h2>Who AGRIVUE Is For</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Farmers</h3>
+      <ul>
+        <li>Save 1–2 irrigations per season</li>
+        <li>Reduce climate-related crop loss</li>
+        <li>Alerts in local language</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>FPOs & Advisories</h3>
+      <ul>
+        <li>Monitor hundreds of fields at once</li>
+        <li>Village-level early warnings</li>
+        <li>Objective crop condition data</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= IMPACT ================= -->
+<section class="section" id="impact">
+  <h2>Impact & Proof</h2>
+
+  <!-- FLOATING STATS -->
+  <div class="impact-cards">
+    <div class="impact-card float-1">
+      <strong class="count" data-target="20">0</strong>
+      <span>% fewer unnecessary irrigations</span>
+    </div>
+
+    <div class="impact-card float-2">
+      <strong class="count" data-target="50">0</strong>
+      <span>+ districts covered</span>
+    </div>
+
+    <div class="impact-card float-3">
+      <strong class="count" data-target="3">0</strong>
+      <span>days earlier risk detection</span>
+    </div>
+  </div>
+
+  <!-- ================= CARD ROW ================= -->
+  <div class="impact-row">
+
+    <!-- CARD 1 -->
+    <div class="risk-card">
+      <div class="map-header">
+        <span>Live Climate Risk Preview</span>
+      </div>
+
+      <p class="map-desc">
+        Field-level climate risk estimated using rainfall,
+        temperature, and soil moisture signals.
+      </p>
+
+      <div class="map-grid">
+        <span class="safe"></span>
+        <span class="medium"></span>
+        <span class="safe"></span>
+        <span class="high"></span>
+        <span class="medium"></span>
+        <span class="safe"></span>
+      </div>
+
+      <div class="map-legend">
+        <span><i class="safe"></i> Safe</span>
+        <span><i class="medium"></i> Medium</span>
+        <span><i class="high"></i> High</span>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="risk-card">
+      <div class="map-header">
+        <span>Live Climate Risk</span>
+        <small>Next 3 days</small>
+      </div>
+
+      <div class="map-grid compact">
+        <span class="safe"></span>
+        <span class="medium"></span>
+        <span class="safe"></span>
+        <span class="high"></span>
+        <span class="medium"></span>
+        <span class="safe"></span>
+      </div>
+
+      <div class="map-insights">
+        <div class="mini-stats">
+          <div><strong>34°C</strong><span>Avg temp</span></div>
+          <div><strong>65%</strong><span>Rain chance</span></div>
+          <div><strong>+12%</strong><span>Risk ↑</span></div>
+        </div>
+
+        <div>
+          <svg class="trend-line" viewBox="0 0 100 24">
+            <polyline
+              fill="none"
+              stroke="#18663A"
+              stroke-width="2"
+              points="0,18 25,12 50,14 75,8 100,10"
+            />
+          </svg>
+          <small class="trend-note">
+            Increasing rainfall likelihood detected
+          </small>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= FINAL CTA FOOTER ================= -->
+<section class="cta-footer">
+  <h2>See climate the way land feels it</h2>
+  <button class="btn-primary large" onclick="openAgriVue()">
+    Enter AgriVue Mode
+  </button>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    AGRIVUE © 2025 · Climate intelligence that supports decisions, not guarantees yield.
+  </div>
+</footer>
+
+<!-- =============== AGRIVUE AI CHATBOT =============== -->
+<button class="chat-launcher" id="chatLauncher">
+  🤖 AgriVue AI
+</button>
+
+<div class="chat-panel" id="chatPanel">
+  <div class="chat-header">
+    <div>
+      <div class="chat-title">AgriVue AI Assistant</div>
+      <div class="chat-subtitle">Ask about climate risk, irrigation, or schemes</div>
+    </div>
+    <button class="chat-close" id="chatClose">&times;</button>
+  </div>
+
+  <div class="chat-body" id="chatBody">
+    <div class="msg msg-bot">
+      <div class="msg-bubble">
+        Namaste 👋. I am AgriVue AI. Tell me your village and crop, or ask:
+        “Is it safe to irrigate today?”.
+      </div>
+    </div>
+  </div>
+
+  <div class="chat-footer">
+    <input
+      type="text"
+      id="chatInput"
+      class="chat-input"
+      placeholder="Type your question..."
+    />
+    <button class="chat-send" id="chatSend">Send</button>
+  </div>
+</div>
+
+<script src="script1.js"></script>
+</body>
+</html>
